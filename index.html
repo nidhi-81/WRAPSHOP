@@ -5,648 +5,564 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WrapShop - They wish you gift</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="style-prefix.css">
-
-  <!--
-    - google font link
-  -->
+  <title>wrapshop - They wish you gift</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style-prefix.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
- 
-
-
-
-
-  <!--
-    - HEADER
-  -->
-
-  <header>
-
-    <div class="header-top">
-
-      <div class="container">
-
-        <ul class="header-social-container">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="header-alert-news">
-          <p>
-            <b>Free Shipping</b>
-            For Valentine's Week - <b>8th to 14th Feb</b>
-          </p>
-        </div>
-
-        <div class="header-top-actions">
-
-          <select name="currency">
-
-            <option value="inr">INR &#x20B9;</option>
-            <option value="usd">USD &dollar;</option>
-            <option value="eur">EUR &euro;</option>
-
-          </select>
-
-          <select name="language">
-
-            <option value="en-US">English</option>
-            <option value="es-ES">Espa&ntilde;ol</option>
-            <option value="fr">Fran&ccedil;ais</option>
-
-          </select>
-
-        </div>
-
+  <div class="overlay" data-overlay></div>
+  <div class="header-main">
+    <div class="container">
+      <a href="#" class="header-logo">
+        <img src="./Img/Wrap.png" alt="Wrap Shop logo" width="140" height="52">
+      </a>
+      <div class="header-search-container">
+        <input type="search" name="search" class="search-field" placeholder="Enter your wish here...">
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
       </div>
-
-    </div>
-
-    <div class="header-main">
-
-      <div class="container">
-
-        <a href="#" class="header-logo">
-          <img src="./Img/Wrap.png" alt="Wrap Shop logo" width="140" height="52">
+      <div class="header-user-actions">
+        <a href="login.html" class="action-btn">
+          <ion-icon name="person-outline"></ion-icon>
         </a>
 
-        <div class="header-search-container">
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
 
-          <input type="search" name="search" class="search-field" placeholder="Enter your wish here...">
-
-          <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="header-user-actions">
-
-          <button class="action-btn">
-            <ion-icon name="person-outline"></ion-icon>
-          </button>
-
-          <button class="action-btn">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
-
-          <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
-
-        </div>
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
 
       </div>
 
     </div>
 
-    <nav class="desktop-navigation-menu">
+  </div>
 
-      <div class="container">
+  <nav class="desktop-navigation-menu">
 
-        <ul class="desktop-menu-category-list">
+    <div class="container">
 
-          <li class="menu-category">
-            <a href="index.html" class="menu-title">Home</a>
-          </li>
+      <ul class="desktop-menu-category-list">
 
-          <li class="menu-category">
-            <a href="productspage.html" class="menu-title">Occasion</a>
+        <li class="menu-category">
+          <a href="index.html" class="menu-title">Home</a>
+        </li>
 
-            <div class="dropdown-panel">
+        <li class="menu-category">
+          <a href="productspage.html" class="menu-title">Occasion</a>
 
-              <ul class="dropdown-panel-list">
+          <div class="dropdown-panel">
 
-                <li class="menu-title">
-                  <a href="#">Party</a>
-                </li>
+            <ul class="dropdown-panel-list">
 
-                <li class="panel-list-item">
-                  <a href="#">Office Party</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Farewell Party</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">House Party</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">New Year Party</a>
-                </li>
-
-
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./Img/1.png" alt="office party" width="250" height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#">Anniversary</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Wedding Anniversary</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Relationship Anniversary</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Job Anniversary</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Organisation Anniversary</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./Img/2.png" alt="Anniversary Gifts" width="250" height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#">Birthday</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Friend's Birthday</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Mom's Birthday</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Dad's Birthday</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Partner's Birthday</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./Img/3.png" alt="Birthday Gifts" width="250" height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#">Special Days</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Valentines Day</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Mothers Day</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Fathers Day</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Teachers Day</a>
-                </li>
-
-
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./Img/4.png" alt="Special Days" width="250" height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-            </div>
-          </li>
-
-          <li class="menu-category">
-            <a href="forhim.html" class="menu-title">For Him</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="forhim.html">Wearables </a>
+              <li class="menu-title">
+                <a href="#">Party</a>
               </li>
 
-              <li class="dropdown-item">
-                <a href="forhim.html">Illustrations</a>
+              <li class="panel-list-item">
+                <a href="#">Office Party</a>
               </li>
 
-              <li class="dropdown-item">
-                <a href="forhim.html">Greeting Cards </a>
+              <li class="panel-list-item">
+                <a href="#">Farewell Party</a>
               </li>
 
-              <li class="dropdown-item">
-                <a href="forhim.html">Accessories </a>
+              <li class="panel-list-item">
+                <a href="#">House Party</a>
               </li>
 
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="forher.html" class="menu-title">For Her</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="forher.html">Wearables </a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="forher.html">Illustrations </a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="forher.html">Greeting Cards </a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="forher.html">Accessories </a>
-              </li>
-
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="kids.html" class="menu-title">Kids</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="kids.html">Wearables: <b>5 to 15 yrs</b></a>
+              <li class="panel-list-item">
+                <a href="#">New Year Party</a>
               </li>
 
 
-              <li class="dropdown-item">
-                <a href="kids.html">Illustrations for Kids</a>
-              </li>
 
-              <li class="dropdown-item">
-                <a href="kids.html">Greeting Cards for Kids</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="kids.html">Accessories and other</a>
-              </li>
-
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="faq.html" class="menu-title">FAQ</a>
-          </li>
-
-          <li class="menu-category">
-            <a href="#" class="menu-title">Deal of the day</a>
-            <ul class="dropdown-list">
-              <li class="dropdown-item">
-                <a href="#">Deal product</a>
-              </li>
               <li class="panel-list-item">
                 <a href="#">
-                  <img src="./Img/Deal.png" alt="Special Days" width="400" height="220">
+                  <img src="./Img/1.png" alt="office party" width="250" height="119">
                 </a>
               </li>
 
             </ul>
 
-          </li>
+            <ul class="dropdown-panel-list">
 
-        </ul>
+              <li class="menu-title">
+                <a href="#">Anniversary</a>
+              </li>
 
-      </div>
+              <li class="panel-list-item">
+                <a href="#">Wedding Anniversary</a>
+              </li>
 
-    </nav>
+              <li class="panel-list-item">
+                <a href="#">Relationship Anniversary</a>
+              </li>
 
-    <div class="mobile-bottom-navigation">
+              <li class="panel-list-item">
+                <a href="#">Job Anniversary</a>
+              </li>
 
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
+              <li class="panel-list-item">
+                <a href="#">Organisation Anniversary</a>
+              </li>
 
-      <button class="action-btn">
-        <ion-icon name="bag-handle-outline"></ion-icon>
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./Img/2.png" alt="Anniversary Gifts" width="250" height="119">
+                </a>
+              </li>
 
-        <span class="count">0</span>
-      </button>
+            </ul>
 
-      <button class="action-btn">
-        <ion-icon name="home-outline"></ion-icon>
-      </button>
+            <ul class="dropdown-panel-list">
 
-      <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
+              <li class="menu-title">
+                <a href="#">Birthday</a>
+              </li>
 
-        <span class="count">0</span>
-      </button>
+              <li class="panel-list-item">
+                <a href="#">Friend's Birthday</a>
+              </li>
 
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="grid-outline"></ion-icon>
-      </button>
+              <li class="panel-list-item">
+                <a href="#">Mom's Birthday</a>
+              </li>
 
-    </div>
+              <li class="panel-list-item">
+                <a href="#">Dad's Birthday</a>
+              </li>
 
-    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+              <li class="panel-list-item">
+                <a href="#">Partner's Birthday</a>
+              </li>
 
-      <div class="menu-top">
-        <h2 class="menu-title">Menu</h2>
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./Img/3.png" alt="Birthday Gifts" width="250" height="119">
+                </a>
+              </li>
 
-        <button class="menu-close-btn" data-mobile-menu-close-btn>
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-      </div>
+            </ul>
 
-      <ul class="mobile-menu-category-list">
+            <ul class="dropdown-panel-list">
 
-        <li class="menu-category">
-          <a href="#" class="menu-title">Home</a>
+              <li class="menu-title">
+                <a href="#">Special Days</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Valentines Day</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Mothers Day</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Fathers Day</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Teachers Day</a>
+              </li>
+
+
+
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./Img/4.png" alt="Special Days" width="250" height="119">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
         </li>
 
         <li class="menu-category">
+          <a href="forhim.html" class="menu-title">For Him</a>
 
-          <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">Men's</p>
+          <ul class="dropdown-list">
 
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list" data-accordion>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shirt</a>
+            <li class="dropdown-item">
+              <a href="forhim.html">Wearables </a>
             </li>
 
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            <li class="dropdown-item">
+              <a href="forhim.html">Illustrations</a>
             </li>
 
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Safety Shoes</a>
+            <li class="dropdown-item">
+              <a href="forhim.html">Greeting Cards </a>
             </li>
 
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Wallet</a>
+            <li class="dropdown-item">
+              <a href="forhim.html">Accessories </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="forher.html" class="menu-title">For Her</a>
+
+          <ul class="dropdown-list">
+
+            <li class="dropdown-item">
+              <a href="forher.html">Wearables </a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="forher.html">Illustrations </a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="forher.html">Greeting Cards </a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="forher.html">Accessories </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="kids.html" class="menu-title">Kids</a>
+
+          <ul class="dropdown-list">
+
+            <li class="dropdown-item">
+              <a href="kids.html">Wearables: <b>5 to 15 yrs</b></a>
+            </li>
+
+
+            <li class="dropdown-item">
+              <a href="kids.html">Illustrations for Kids</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="kids.html">Greeting Cards for Kids</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="kids.html">Accessories and other</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="faq.html" class="menu-title">FAQ</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Deal of the day</a>
+          <ul class="dropdown-list">
+            <li class="dropdown-item">
+              <a href="#">Deal product</a>
+            </li>
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="./Img/Deal.png" alt="Special Days" width="400" height="220">
+              </a>
             </li>
 
           </ul>
 
-        </li>
-
-        <li class="menu-category">
-
-          <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">Women's</p>
-
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list" data-accordion>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Dress & Frock</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Earrings</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Necklace</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Makeup Kit</a>
-            </li>
-
-          </ul>
-
-        </li>
-
-        <li class="menu-category">
-
-          <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">Jewelry</p>
-
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list" data-accordion>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Earrings</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Couple Rings</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Necklace</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Bracelets</a>
-            </li>
-
-          </ul>
-
-        </li>
-
-        <li class="menu-category">
-
-          <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">Perfume</p>
-
-            <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-            </div>
-          </button>
-
-          <ul class="submenu-category-list" data-accordion>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Clothes Perfume</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Deodorant</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Flower Fragrance</a>
-            </li>
-
-            <li class="submenu-category">
-              <a href="#" class="submenu-title">Air Freshener</a>
-            </li>
-
-          </ul>
-
-        </li>
-
-        <li class="menu-category">
-          <a href="#" class="menu-title">Blog</a>
-        </li>
-
-        <li class="menu-category">
-          <a href="#" class="menu-title">Hot Offers</a>
         </li>
 
       </ul>
 
-      <div class="menu-bottom">
+    </div>
 
-        <ul class="menu-category-list">
+  </nav>
 
-          <li class="menu-category">
+  <div class="mobile-bottom-navigation">
 
-            <button class="accordion-menu" data-accordion-btn>
-              <p class="menu-title">Language</p>
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
 
-              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
-            </button>
+    <button class="action-btn">
+      <ion-icon name="bag-handle-outline"></ion-icon>
 
-            <ul class="submenu-category-list" data-accordion>
+      <span class="count">0</span>
+    </button>
 
-              <li class="submenu-category">
-                <a href="#" class="submenu-title">English</a>
-              </li>
+    <button class="action-btn">
+      <ion-icon name="home-outline"></ion-icon>
+    </button>
 
-              <li class="submenu-category">
-                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
-              </li>
+    <button class="action-btn">
+      <ion-icon name="heart-outline"></ion-icon>
 
-              <li class="submenu-category">
-                <a href="#" class="submenu-title">Fren&ccedil;h</a>
-              </li>
+      <span class="count">0</span>
+    </button>
 
-            </ul>
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="grid-outline"></ion-icon>
+    </button>
 
+  </div>
+
+  <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+    <div class="menu-top">
+      <h2 class="menu-title">Menu</h2>
+
+      <button class="menu-close-btn" data-mobile-menu-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+
+    <ul class="mobile-menu-category-list">
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Home</a>
+      </li>
+
+      <li class="menu-category">
+
+        <button class="accordion-menu" data-accordion-btn>
+          <p class="menu-title">Men's</p>
+
+          <div>
+            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+          </div>
+        </button>
+
+        <ul class="submenu-category-list" data-accordion>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Shirt</a>
           </li>
 
-          <li class="menu-category">
-            <button class="accordion-menu" data-accordion-btn>
-              <p class="menu-title">Currency</p>
-              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
-            </button>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Shorts & Jeans</a>
+          </li>
 
-            <ul class="submenu-category-list" data-accordion>
-              <li class="submenu-category">
-                <a href="#" class="submenu-title">USD &dollar;</a>
-              </li>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Safety Shoes</a>
+          </li>
 
-              <li class="submenu-category">
-                <a href="#" class="submenu-title">EUR &euro;</a>
-              </li>
-            </ul>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Wallet</a>
           </li>
 
         </ul>
 
-        <ul class="menu-social-container">
+      </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
+      <li class="menu-category">
+
+        <button class="accordion-menu" data-accordion-btn>
+          <p class="menu-title">Women's</p>
+
+          <div>
+            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+          </div>
+        </button>
+
+        <ul class="submenu-category-list" data-accordion>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Dress & Frock</a>
           </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Earrings</a>
           </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Necklace</a>
           </li>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Makeup Kit</a>
           </li>
 
         </ul>
 
-      </div>
+      </li>
 
-    </nav>
+      <li class="menu-category">
+
+        <button class="accordion-menu" data-accordion-btn>
+          <p class="menu-title">Jewelry</p>
+
+          <div>
+            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+          </div>
+        </button>
+
+        <ul class="submenu-category-list" data-accordion>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Earrings</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Couple Rings</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Necklace</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Bracelets</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li class="menu-category">
+
+        <button class="accordion-menu" data-accordion-btn>
+          <p class="menu-title">Perfume</p>
+
+          <div>
+            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+          </div>
+        </button>
+
+        <ul class="submenu-category-list" data-accordion>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Clothes Perfume</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Deodorant</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Flower Fragrance</a>
+          </li>
+
+          <li class="submenu-category">
+            <a href="#" class="submenu-title">Air Freshener</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Blog</a>
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Hot Offers</a>
+      </li>
+
+    </ul>
+
+    <div class="menu-bottom">
+
+      <ul class="menu-category-list">
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Language</p>
+
+            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">English</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Fren&ccedil;h</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Currency</p>
+            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">USD &dollar;</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">EUR &euro;</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <ul class="menu-social-container">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
 
   </header>
+
+
+
+
+
   <!--
     - MAIN
   -->
@@ -702,12 +618,30 @@
       </div>
 
     </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+
+
+
+
+
+
     <!--
       - PRODUCT
     -->
 
     <div class="product-container">
+
       <div class="container">
+
+
         <!--
           - SIDEBAR
         -->
@@ -769,6 +703,11 @@
                 </ul>
 
               </li>
+
+
+
+
+
               <li class="sidebar-menu-category">
 
                 <button class="sidebar-accordion-menu" data-accordion-btn>
@@ -936,10 +875,10 @@
                     </div>
 
                     <div class="price-box">
-                      
+
                       <del>₹250</del>
                       <p class="price">₹199</p>
-                      
+
                     </div>
 
                   </div>
@@ -1105,7 +1044,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/clothes-3.jpg" alt="black floral wrap midi skirt" class="showcase-img" width="70">
+                      <img src="./assets/images/products/clothes-3.jpg" alt="black floral wrap midi skirt"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1128,7 +1068,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shirt-1.jpg" alt="pure garment dyed cotton shirt" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shirt-1.jpg" alt="pure garment dyed cotton shirt"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1155,7 +1096,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1178,7 +1120,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jacket-1.jpg" alt="mens winter leathers jackets" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jacket-1.jpg" alt="mens winter leathers jackets"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1201,7 +1144,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jacket-3.jpg" alt="mens winter leathers jackets" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jacket-3.jpg" alt="mens winter leathers jackets"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1224,7 +1168,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shorts-1.jpg" alt="better basics french terry sweatshorts" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1261,7 +1206,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/sports-1.jpg" alt="running & trekking shoes - white" class="showcase-img" width="70">
+                      <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1284,7 +1230,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/sports-2.jpg" alt="trekking & running shoes - black" class="showcase-img" width="70">
+                      <img src="./assets/images/products/sports-2.jpg" alt="trekking & running shoes - black"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1307,7 +1254,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/party-wear-1.jpg" alt="womens party wear shoes" class="showcase-img" width="70">
+                      <img src="./assets/images/products/party-wear-1.jpg" alt="womens party wear shoes"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1330,7 +1278,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/sports-3.jpg" alt="sports claw women's shoes" class="showcase-img" width="70">
+                      <img src="./assets/images/products/sports-3.jpg" alt="sports claw women's shoes"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1357,7 +1306,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/sports-6.jpg" alt="air tekking shoes - white" class="showcase-img" width="70">
+                      <img src="./assets/images/products/sports-6.jpg" alt="air tekking shoes - white"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1380,7 +1330,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shoe-3.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shoe-3.jpg" alt="Boot With Suede Detail" class="showcase-img"
+                        width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1403,7 +1354,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shoe-1.jpg" alt="men's leather formal wear shoes" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shoe-1.jpg" alt="men's leather formal wear shoes"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1426,7 +1378,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shoe-2.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shoe-2.jpg" alt="casual men's brown shoes" class="showcase-img"
+                        width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1463,7 +1416,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/watch-3.jpg" alt="pocket watch leather pouch" class="showcase-img" width="70">
+                      <img src="./assets/images/products/watch-3.jpg" alt="pocket watch leather pouch"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1486,7 +1440,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jewellery-3.jpg" alt="silver deer heart necklace" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jewellery-3.jpg" alt="silver deer heart necklace"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1509,7 +1464,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/perfume.jpg" alt="titan 100 ml womens perfume" class="showcase-img" width="70">
+                      <img src="./assets/images/products/perfume.jpg" alt="titan 100 ml womens perfume"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1532,7 +1488,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/belt.jpg" alt="men's leather reversible belt" class="showcase-img" width="70">
+                      <img src="./assets/images/products/belt.jpg" alt="men's leather reversible belt"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1559,7 +1516,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jewellery-2.jpg" alt="platinum zircon classic ring" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jewellery-2.jpg" alt="platinum zircon classic ring"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1582,7 +1540,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/watch-1.jpg" alt="smart watche vital plus" class="showcase-img" width="70">
+                      <img src="./assets/images/products/watch-1.jpg" alt="smart watche vital plus" class="showcase-img"
+                        width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1605,7 +1564,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/shampoo.jpg" alt="shampoo conditioner packs" class="showcase-img" width="70">
+                      <img src="./assets/images/products/shampoo.jpg" alt="shampoo conditioner packs"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1628,7 +1588,8 @@
                   <div class="showcase">
 
                     <a href="product.html" class="showcase-img-box">
-                      <img src="./images/products/jewellery-1.jpg" alt="rose gold peacock earrings" class="showcase-img" width="70">
+                      <img src="./assets/images/products/jewellery-1.jpg" alt="rose gold peacock earrings"
+                        class="showcase-img" width="70">
                     </a>
 
                     <div class="showcase-content">
@@ -1662,7 +1623,7 @@
             - PRODUCT FEATURED
           -->
 
-          
+
           <!--
             - PRODUCT GRID
           -->
@@ -1670,48 +1631,48 @@
           <div class="product-main">
 
             <h2 class="title">New Products</h2>
-    
+
             <div class="product-grid">
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-    
-                  <img src="./forhim/4.png" alt="Fathers Day Card" width="300" class="product-img default"   height="400">
-                  <img src="./forhim/4.png" alt="Fathers Day Card" width="300" class="product-img hover"  height="400">
-    
+
+                  <img src="./forhim/4.png" alt="Fathers Day Card" width="300" class="product-img default" height="400">
+                  <img src="./forhim/4.png" alt="Fathers Day Card" width="300" class="product-img hover" height="400">
+
                   <p class="showcase-badge">15%</p>
-    
+
                   <div class="showcase-actions">
-    
+
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
-    
+
                   </div>
-    
+
                 </div>
-    
+
                 <div class="showcase-content">
-    
+
                   <a href="#" class="showcase-category">Cards</a>
-    
+
                   <a href="#">
                     <h3 class="showcase-title">Cards</h3>
                   </a>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1719,50 +1680,50 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹249</p>
                     <del>₹450</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/5.png" alt="Wallet Card" class="product-img default" width="300"  height="400">
-                  <img src="./forhim/5.png" alt="Wallet Card" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/5.png" alt="Wallet Card" class="product-img default" width="300" height="400">
+                  <img src="./forhim/5.png" alt="Wallet Card" class="product-img hover" width="300" height="400">
+
                   <p class="showcase-badge angle black">sale</p>
-    
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">wallet</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Wallet card</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1770,48 +1731,50 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹199</p>
                     <del>₹250</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/2.png" alt="Men Solid Black hood " class="product-img default" width="300"  height="400">
-                  <img src="./forhim/2.png" alt="Men Solid Black hood" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/2.png" alt="Men Solid Black hood " class="product-img default" width="300"
+                    height="400">
+                  <img src="./forhim/2.png" alt="Men Solid Black hood" class="product-img hover" width="300"
+                    height="400">
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">Jacket</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Men Solid Black hood</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1819,50 +1782,52 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹1499</p>
                     <del>₹2500</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/3.png" alt="Personalised Bday card" class="product-img default" width="300" height="400">
-                  <img src="./forhim/3.png" alt="Personalised Bday card" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/3.png" alt="Personalised Bday card" class="product-img default" width="300"
+                    height="400">
+                  <img src="./forhim/3.png" alt="Personalised Bday card" class="product-img hover" width="300"
+                    height="400">
+
                   <p class="showcase-badge angle pink">new</p>
-    
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">Card</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Personalised Bday card</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1870,48 +1835,49 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹249</p>
                     <del>₹350</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/1.png" alt="Marvel spidey tee" class="product-img default" width="300"  height="400">
-                  <img src="./forhim/1.png" alt="Marvel spidey tee" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/1.png" alt="Marvel spidey tee" class="product-img default" width="300"
+                    height="400">
+                  <img src="./forhim/1.png" alt="Marvel spidey tee" class="product-img hover" width="300" height="400">
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">TEE</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Marvel spidey tee</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1919,50 +1885,50 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹499</p>
                     <del>₹606</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/6.png" alt="Handmade sketch" class="product-img default" width="300"  height="400">
-                  <img src="./forhim/6.png" alt="Handmade sketch" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/6.png" alt="Handmade sketch" class="product-img default" width="300" height="400">
+                  <img src="./forhim/6.png" alt="Handmade sketch" class="product-img hover" width="300" height="400">
+
                   <p class="showcase-badge angle black">sale</p>
-    
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">sketch</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Handmade sketch</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -1970,48 +1936,48 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹399</p>
                     <del>₹599</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
                   <img src="./forhim/7.png" alt="Hand Bracelet" class="product-img default" width="300" height="400">
                   <img src="./forhim/7.png" alt="Hand Bracelet" class="product-img hover" width="300" height="400">
-    
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
+
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
+
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">accessories</a>
-    
+
                   <h3>
                     <a href="#" class="showcase-title">Hand Bracelet</a>
                   </h3>
-    
+
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -2019,50 +1985,47 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
+
                   <div class="price-box">
                     <p class="price">₹1299</p>
                     <del>₹1399</del>
                   </div>
-    
+
                 </div>
-    
+
               </div>
-    
+
               <div class="showcase">
-    
+
                 <div class="showcase-banner">
-                  <img src="./forhim/8.png" alt="Vector art illustration" class="product-img default" width="300" height="400">
-                  <img src="./forhim/8.png" alt="Vector art illustration" class="product-img hover" width="300"  height="400">
-    
+                  <img src="./forhim/8.png" alt="Vector art illustration" class="product-img default" width="300"
+                    height="400">
+                  <img src="./forhim/8.png" alt="Vector art illustration" class="product-img hover" width="300"
+                    height="400">
+
                   <p class="showcase-badge angle black">vector</p>
-    
+
                   <div class="showcase-actions">
                     <button class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
-    
-                    <button class="btn-action">
+
+                    <a href="login.html" class="btn-action">
                       <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-    
+                    </a>
                     <button class="btn-action">
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
-    
                     <button class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
                 </div>
-    
                 <div class="showcase-content">
                   <a href="#" class="showcase-category">vector</a>
-    
                   <h3>
                     <a href="#" class="showcase-title">Vector art</a>
                   </h3>
-    
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -2070,552 +2033,124 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                   </div>
-    
                   <div class="price-box">
                     <p class="price">₹599</p>
                     <del>₹799</del>
                   </div>
-    
                 </div>
-    
               </div>
-    
-    
             </div>
-    
           </div>
-    
         </div>
-    
       </div>
-    
     </div>
-
-
-
-
-
-    <!--
-      - TESTIMONIALS, CTA & SERVICE
-    -->
-
-    <div>
-
-      <div class="container">
-
-        <div class="testimonials-box">
-
-          <!--
-            - TESTIMONIALS
-          -->
-
-          <div class="testimonial">
-
-            <h2 class="title">testimonial</h2>
-
-            <div class="testimonial-card">
-
-              <img src="./Img/test.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
-
-              <p class="testimonial-name">From the Team</p>
-
-              <p class="testimonial-title">CEO & Founder Invision</p>
-
-              <img src="./images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
-
-              <p class="testimonial-desc">
-                Our mission is to bring smiles and help those that value art
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-          <!--
-            - CTA
-          -->
-
-          <div class="cta-container">
-
-            <img src="./Img/discount.png" alt="summer collection" class="cta-banner"
-              width=480px height=480px>
-
-
-
-          </div>
-
-
-
-          <!--
-            - SERVICE
-          -->
-
-          <div class="service">
-
-            <h2 class="title">Our Services</h2>
-
-            <div class="service-container">
-
-              <a href="#" class="service-item">
-
-                <div class="service-icon">
-                  <ion-icon name="boat-outline"></ion-icon>
-                </div>
-
-                <div class="service-content">
-
-                  <h3 class="service-title">Worldwide Delivery</h3>
-                  <p class="service-desc">For Order Over ₹8,000</p>
-
-                </div>
-
-              </a>
-
-              <a href="#" class="service-item">
-
-                <div class="service-icon">
-                  <ion-icon name="rocket-outline"></ion-icon>
-                </div>
-
-                <div class="service-content">
-
-                  <h3 class="service-title">Next Day delivery</h3>
-                  <p class="service-desc">INDIA Orders Only</p>
-
-                </div>
-
-              </a>
-
-              <a href="#" class="service-item">
-
-                <div class="service-icon">
-                  <ion-icon name="call-outline"></ion-icon>
-                </div>
-
-                <div class="service-content">
-
-                  <h3 class="service-title">Best Online Support</h3>
-                  <p class="service-desc">Hours: 8AM - 11PM</p>
-
-                </div>
-
-              </a>
-
-              <a href="#" class="service-item">
-
-                <div class="service-icon">
-                  <ion-icon name="arrow-undo-outline"></ion-icon>
-                </div>
-
-                <div class="service-content">
-
-                  <h3 class="service-title">Return Policy</h3>
-                  <p class="service-desc">Easy & Free Return</p>
-
-                </div>
-
-              </a>
-
-              <a href="#" class="service-item">
-
-                <div class="service-icon">
-                  <ion-icon name="ticket-outline"></ion-icon>
-                </div>
-
-                <div class="service-content">
-
-                  <h3 class="service-title">50% money back policy</h3>
-                  <p class="service-desc">For Order Over ₹1000</p>
-
-                </div>
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-    <!--
-      - BLOG
-    -->
-
-    <div class="blog">
-
-      <div class="container">
-
-        <div class="blog-container has-scrollbar">
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="./images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Fashion</a>
-
-              <a href="#">
-                <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
-              </a>
-
-              <p class="blog-meta">
-                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="./images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle." class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Clothes</a>
-
-              <h3>
-                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="./images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue." class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Shoes</a>
-
-              <h3>
-                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="./images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle." class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Electronics</a>
-
-              <h3>
-                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
   </main>
-
-
-
-
-
   <!--
     - FOOTER
   -->
-
   <footer>
-
-    <div class="footer-category">
-
-      <div class="container">
-
-        <h2 class="footer-category-title">PRODUCT VARIETY</h2>
-
-        <div class="footer-category-box">
-
-          <h3 class="category-box-title">Personalised Gifts :</h3>
-
-          <a href="#" class="footer-category-link">Custom photo T-shirt</a>
-          <a href="#" class="footer-category-link">Vintage Photo Frame</a>
-          <a href="#" class="footer-category-link">Portrait Sketch</a>
-          <a href="#" class="footer-category-link">Personalised Photo Cup</a>
-          <a href="#" class="footer-category-link">Dresses</a>
-          <a href="#" class="footer-category-link">Wallet</a>
-          <a href="#" class="footer-category-link">Pendant</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Vector Art :</h3>
-
-          <a href="#" class="footer-category-link">Vector Portrait</a>
-          <a href="#" class="footer-category-link">Wallet Cards</a>
-          <a href="#" class="footer-category-link">T-shirt Prints</a>
-          <a href="#" class="footer-category-link">Hoodies</a>
-          <a href="#" class="footer-category-link">Vector Polaroid</a>
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Small Gestures :</h3>
-
-          <a href="#" class="footer-category-link">Keychain</a>
-          <a href="#" class="footer-category-link">Personalised Bouquet</a>
-          <a href="#" class="footer-category-link">Greeting Cards with custom message</a>
-          <a href="#" class="footer-category-link">Mini Teddy</a>
-          <a href="#" class="footer-category-link">Pocket Perfume</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Ring</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
     <div class="footer-nav">
-
       <div class="container">
-
         <ul class="footer-nav-list">
-
           <li class="footer-nav-item">
             <h2 class="nav-title">Popular Categories</h2>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Valentines Day</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Greeting Cards</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Mothers Day</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Women's Day</a>
           </li>
-
         </ul>
-
         <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Price drop</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link"></a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
           <li class="footer-nav-item">
             <h2 class="nav-title">Our Company</h2>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Delivery</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Legal Notice</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Terms and conditions</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">About us</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Secure payment</a>
           </li>
-
         </ul>
-
         <ul class="footer-nav-list">
-
           <li class="footer-nav-item">
             <h2 class="nav-title">Services</h2>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Custom Gifts</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Gift Cards</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Artist collection</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Artisan Collaboration</a>
           </li>
-
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Sitemap</a>
           </li>
-
         </ul>
-
         <ul class="footer-nav-list">
-
           <li class="footer-nav-item">
             <h2 class="nav-title">Contact</h2>
           </li>
-
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <address class="content">
               XYZ Road
               New Delhi(DL), 110015, INDIA
             </address>
           </li>
-
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <ion-icon name="call-outline"></ion-icon>
             </div>
-
             <a href="tel:+91 601-301-9999" class="footer-nav-link">(+91) 123-456-7890</a>
           </li>
-
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
-            <a href="mailto:wraoshop@gmail.com" class="footer-nav-link">wrapshop@gmail.com</a>
+            <a href="mailto:wrapshop@gmail.com" class="footer-nav-link">wrapshop@gmail.com</a>
           </li>
-
         </ul>
-
         <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
-
-          <li>
-            <ul class="social-link">
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
         </ul>
-
       </div>
-
     </div>
-
     <div class="footer-bottom">
-
       <div class="container">
-
-        <img src="./images/payment.png" alt="payment method" class="payment-img">
-
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
         <p class="copyright">
           Copyright &copy; <a href="#">wrapshop</a> all rights reserved.
         </p>
-
       </div>
-
     </div>
-
   </footer>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
