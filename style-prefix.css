@@ -1,17 +1,39 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
-  --salmon-pink: hsl(315, 5%, 83%);
+  --salmon-pink: hsl(325, 95%, 96%);
 
-  --sandy-brown: hsl(36, 2%, 43%);
-  --bittersweet: hsl(0, 1%, 33%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
   --ocean-green: hsl(152, 51%, 52%);
   --davys-gray: hsl(327, 15%, 12%);
-  --burgundy: hsl(0, 0%, 46%);
-  --rose-maroon : hsl(0, 0%, 29%);
-  --beautiful_red:hsl(0, 1%, 20%);
-  --maroon-pink :hsl(330, 2%, 35%);
-  --other-pink : hsl(330, 1%, 26%);
+  --burgundy: hsl(340, 41%, 17%);
+  --rose-maroon : hsl(348, 66%, 23%);
+  --beautiful_red:hsl(349, 75%, 30%);
+  --maroon-pink :hsl(334, 80%, 33%);
+  --other-pink : hsl(334, 52%, 50%);
   --cultured: hsl(0, 0%, 93%);
   --white: hsl(0, 100%, 100%);
   --onyx: hsl(0, 0%, 27%);
@@ -44,6 +66,29 @@
 
   --border-radius-md: 10px;
   --border-radius-sm: 5px;
+
+  /**
+   * transition
+   */
+
+  --transition-timing: 0.2s ease;
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 a { text-decoration: none; }
 

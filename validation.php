@@ -37,7 +37,7 @@
 
 		else{
 
-			echo " name had value : ".$name;
+			echo " Welcome ".$name;
 			$_SESSION['username'] = $name;
 			// $_SESSION['locality'] = $locality;
 
